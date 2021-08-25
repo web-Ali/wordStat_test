@@ -28,7 +28,8 @@ const FormQuest = () => {
         setTableData([]);
         arr = arr.replace(/\s+/g, '')
         arr = arr.split(/[,;]/)
-
+        arr = [...new Set(arr)];
+        console.log(arr);
         for (let a = 0; a < arr.length; a++) {
             if (!isNaN(arr[a]) && arr[a] > 0 && arr[a] <= 20) {
                 try {
@@ -56,7 +57,6 @@ const FormQuest = () => {
 
     return (
         <div>
-            <p>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20</p>
             <form className='question'>
                 <label>Идентификатор строк: </label>
                 <input value={text} onChange={(e) => setText(e.target.value)} type="text"/>
