@@ -1,0 +1,35 @@
+.wrapper{
+    max-width: 800px;
+    margin: 100px auto 0 auto;
+}
+.question{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.question input{
+    padding: 5px;
+    width: 100%;
+}
+
+.question label{
+    width: 50%;
+}
+.table-answer {
+    margin-top: 15px;
+    text-align: center;
+}
+.table-answer table{
+    width: 100%;
+    border: 1px solid black;
+    border-bottom: 4px solid black;
+    padding: 10px;
+}
+
+.table-answer table thead{
+    font-weight: bold;
+}
+.table-answer td{
+    border: 1px solid gray;
+    padding: 5px;
+}
